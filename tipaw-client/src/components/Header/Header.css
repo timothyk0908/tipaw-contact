@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tipaw-logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+  }
+
+  .tipaw-name {
+    color: #53ceea;
+  }
+
+  .my-tipaw {
+    background-color: #ffcc01;
+    color: #fff !important;
+    border-radius: 16px;
+  }
