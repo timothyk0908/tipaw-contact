@@ -19,3 +19,10 @@ ul {
     color: #fff !important;
     border-radius: 16px;
   }
+
+  .header-item {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 10px;
+  }

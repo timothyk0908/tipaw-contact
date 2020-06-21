@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Header from './Header';
+import Footer from './Footer';
 
-test('renders the app header', () => {
-  const { getByText } = render(<Header />);
+test('renders creates a footer', () => {
+  const { getByText } = render(<Footer />);
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -1,13 +1,22 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css';
+import ContactForm from './components/ContactForm/ContactForm';
+import Header from './components/Header/Header.js';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/contact" component={ContactForm} />
+          <Route path="*" component={NotFound} />
+        </Switch>
+      </div >
+    </Router>
   );
 }
 
