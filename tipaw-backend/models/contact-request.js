@@ -10,4 +10,4 @@ const contactRequestSchema = mongoose.Schema({
   message: { type: String, required: true },
 });
 
-export const contactRequestModel = mongoose.model('ContactRequest', contactRequestSchema);
+module.exports = mongoose.model('contactRequest', contactRequestSchema);
