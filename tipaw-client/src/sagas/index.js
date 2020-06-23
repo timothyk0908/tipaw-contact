@@ -6,7 +6,7 @@ function* sendContactRequest(action) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     }});
-    yield put({ type: "CONTACT_REQUEST_SUCCESSFUL", message: 'thanks' });
+    yield put({ type: "CONTACT_REQUEST_SUCCESSFUL" });
   } catch (e) {
     yield put({ type: "CONTACT_REQUEST_FAILED", message: e.message });
   }

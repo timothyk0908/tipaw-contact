@@ -1,11 +1,11 @@
 import React from 'react';
-import { Footer } from 'react-bootstrap';
-import './Header.css';
+import './Footer.css';
 
 
 function Footer() {
     return (
-        <Footer></Footer>
+        <div className="footer">
+        </div>
     );
 }
 

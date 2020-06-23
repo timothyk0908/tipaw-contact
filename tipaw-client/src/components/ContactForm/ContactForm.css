@@ -1,0 +1,16 @@
+.contact-form {
+    width: 30%;
+    position: relative;
+    border: 1px gray;
+    float: none;
+    margin: 0 auto;
+  }
+
+.form-label:after {
+    content:"*";
+    color:red;
+  }
+
+  .form-control {
+    background-color: #CED4CE;
+  }
