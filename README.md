@@ -3,17 +3,17 @@
 This project contains the client built with React, and the back-end built with express
 
 ## Prerequisites
-In order to run this project node.js and npm both need to have been installed.
+In order to run this project node.js and npm both need to have been installed, as well as MongoDB https://www.mongodb.com
 
-## Deployment
-<ol>
-<li>Clone this repo</li>
-<li>Run npm start from react-express-example to start the Express app</li>
-<li>Run npm start from the client directory to start the React app</li>
-<li>Visit http://localhost:3000/</li>
-</ol>
+## Installation
+cd in tipaw-client and npm install to install all the needed dependencies
+cd in tipaw-backend and npm install to install all the needed dependencies
+
+## Start
+For client and back-end, run npm start, then launch http://localhost:3000 to access the client application
 
 ## Built With
 * [React.js](https://reactjs.org/)
 * [Express.js](https://expressjs.com/)
-* [React-Router](https://reacttraining.com/react-router/core/guides/philosophy)
+* [MongoDB](https://www.mongodb.com/fr)
+*.[Redux]
