@@ -5,12 +5,7 @@ import Toast from 'react-bootstrap/Toast'
 
 function ContactForm() {
 
-    const sendContactRequest = () => {
-        console.log(inputs);
-        alert('contact request sent');
-    }
-
-    const {inputs, handleInputChange, handleSubmit} = useContactForm(sendContactRequest);
+    const {inputs, handleInputChange, handleSubmit} = useContactForm();
 
     return (
         <form onSubmit={handleSubmit}>

@@ -11,14 +11,11 @@ var db = mongoose.connection;
 //Bind connection to error event (to get notification of connection errors)
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
 /* POST contact form. */
 router.post('/', function (req, res, next) {
   var contactRequestSchema = mongoose.model('contactRequest', contactRequestSchema);
   var newContactRequest = new contactRequestSchema(req.body);
-  // Create an instance of model SomeModel
 
-  // Save the new model instance, passing a callback
   newContactRequest.save(function (err) {
     if (err) return next(err);
     res.send(res.statusCode);

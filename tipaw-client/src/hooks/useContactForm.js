@@ -1,12 +1,14 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux'
 
-const useContactForm = (callback) => {
+const useContactForm = () => {
+  const dispatch = useDispatch()
     const [inputs, setInputs] = useState({});
     const handleSubmit = (event) => {
       if (event) {
         event.preventDefault();
       }
-      callback();
+      dispatch({type: 'CONTACT_REQUEST_SENT', payload: inputs});
     }
     const handleInputChange = (event) => {
       event.persist();
