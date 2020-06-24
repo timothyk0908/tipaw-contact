@@ -17,6 +17,8 @@ Click on 'Contact' to access the contact page
 To run tests for either client or back-end, just cd into the repo and type 'npm run test' to launch them 
 
 ## Next big priorities
+**Reducers/Toast**: I put the alert in reducers, and didn't go further in the SUCCESS and FAILED actions for now
+
 **Webpack configuration**: didn't do, I still needed to get updated with all the libraries used and webpack wasn't my first priority
 
 **Validation**: ( express-validators for back-end should probably be added, with other types than string ), like for Email or phone, limit characters, ...
