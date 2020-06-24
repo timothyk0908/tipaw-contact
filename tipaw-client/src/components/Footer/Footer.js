@@ -5,6 +5,7 @@ import './Footer.css';
 function Footer() {
     return (
         <div className="footer">
+            Footer content
         </div>
     );
 }

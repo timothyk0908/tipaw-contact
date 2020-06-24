@@ -4,6 +4,6 @@ import Footer from './Footer';
 
 test('renders creates a footer', () => {
   const { getByText } = render(<Footer />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(/Footer content/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var contact = express.Router();
 
 var mongoose = require('mongoose');
 require('../models/contact-request');
@@ -12,7 +12,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 /* POST contact form. */
-router.post('/', function (req, res, next) {
+contact.post('/', function (req, res, next) {
   var contactRequestSchema = mongoose.model('contactRequest', contactRequestSchema);
   var newContactRequest = new contactRequestSchema(req.body);
 
@@ -22,4 +22,4 @@ router.post('/', function (req, res, next) {
   });
 });
 
-module.exports = router;
+module.exports = contact;
