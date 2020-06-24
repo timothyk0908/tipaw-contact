@@ -6,9 +6,11 @@ import './Header.css';
 function Header() {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand><Image src="assets/logo.png" className="tipaw-logo" />
-                <span className="tipaw-name">TIPAW</span>
-            </Navbar.Brand>
+            <Link className="header-item" to="/">
+                <Navbar.Brand><Image src="assets/logo.png" className="tipaw-logo" />
+                    <span className="tipaw-name">TIPAW</span>
+                </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
